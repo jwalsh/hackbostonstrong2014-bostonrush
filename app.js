@@ -115,8 +115,8 @@ app.use(function(req, res, next) {
  * Application routes.
  */
 
-app.get('/', splashController.index);
-app.get('/home', homeController.index);
+app.get('/', homeController.index);
+app.get('/rush', rushController.index);
 app.get('/login', userController.getLogin);
 app.post('/login', userController.postLogin);
 app.get('/logout', userController.logout);

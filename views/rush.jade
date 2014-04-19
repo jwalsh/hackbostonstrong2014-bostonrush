@@ -1,0 +1,22 @@
+extends layout
+
+block content
+  img(style='width: 100%; margin: 50px auto; display: block;', src='img/logo-full.png')
+
+  if !user
+    a.btn.btn-block.btn-facebook.btn-social(href='/auth/facebook')
+      i.fa.fa-facebook
+      | Sign in with Facebook
+  else
+    p Enter your bib number to complete with Tom Davis from
+    form(action='home')
+    .input-group
+        span.input-group-btn
+            button.btn.btn-default(type='button') Go!
+          input.form-control(type='text', name='bib', value='Input your BIB number')
+
+  h1 Rush Tom Davis
+
+  p You'll be competing against the winner of the 2013 marathon. Let's see how you compare:
+
+  p.lead
