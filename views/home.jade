@@ -8,9 +8,12 @@ block content
       i.fa.fa-facebook
       | Sign in with Facebook
   else
-    p Enter your bib number to complete with <i>Davis, Tom from
+    p Enter your bib number to complete with Tom Davis from
     form(action='home')
-    input(name='bib', value='bib#')
+    .input-group
+        span.input-group-btn
+            button.btn.btn-default(type='button') Go!
+          input.form-control(type='text', name='bib', value='Input your BIB number')
 
   h1 Rush Tom Davis
 
