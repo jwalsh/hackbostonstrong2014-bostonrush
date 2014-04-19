@@ -3,7 +3,7 @@
  * Home page.
  */
 
-exports.index = function(req, res) {
+exports.rush = function(req, res) {
   res.render('Rush', {
     title: 'BostonRush'
   });

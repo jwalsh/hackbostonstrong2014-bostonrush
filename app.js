@@ -26,7 +26,7 @@ var connectAssets = require('connect-assets');
  * Load controllers.
  */
 
-var splashController = require('./controllers/splash');
+var rushController = require('./controllers/rush');
 var homeController = require('./controllers/home');
 var userController = require('./controllers/user');
 var apiController = require('./controllers/api');
@@ -116,7 +116,7 @@ app.use(function(req, res, next) {
  */
 
 app.get('/', homeController.index);
-app.get('/rush', rushController.index);
+app.get('/rush', rushController.rush);
 app.get('/login', userController.getLogin);
 app.post('/login', userController.postLogin);
 app.get('/logout', userController.logout);
