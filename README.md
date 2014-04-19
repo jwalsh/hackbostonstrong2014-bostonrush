@@ -14,12 +14,21 @@ Prerequisites
  - <img src="http://i1-news.softpedia-static.com/images/extra/LINUX/small/slw218news1.png" height="17">&nbsp;**Fedora**: `sudo yum groupinstall "Development Tools"`
  - <img src="https://en.opensuse.org/images/b/be/Logo-geeko_head.png" height="17">&nbsp;**OpenSUSE**: `sudo zypper install --type pattern devel_basis`
 
-Getting Started
----------------
+
+Initialization
+-------------- 
+
+```bash 
+mongoimport --jsonArray --collection marathonResults --file dmarathon_2013.json
+npm install
+bower install 
+
+```
+
+Running 
+-------
 
 ```bash
-npm install
-
 node app.js
 ```
 
