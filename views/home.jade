@@ -3,9 +3,19 @@ extends layout
 block content
   img(style='width: 100%; margin: 50px auto; display: block;', src='img/logo-full.png')
 
-  a.btn.btn-block.btn-facebook.btn-social(href='/auth/facebook')
-    i.fa.fa-facebook
-    | Sign in with Facebook
+  if !user
+    a.btn.btn-block.btn-facebook.btn-social(href='/auth/facebook')
+      i.fa.fa-facebook
+      | Sign in with Facebook
+  else
+    p Enter your bible number to complete with <i>Davis, Tom from
+    form(action='home')
+    input(name='bib', value='bib#')
 
+  h1 Rush Tom Davis
+
+  p You'll be competing against the winner of the 2013 marathon.  Let's see how you compare:
+
+  hr
 
   p.lead
