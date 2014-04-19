@@ -1,7 +1,7 @@
 extends layout
 
 block content
-  img(style='width: 100%; margin: 50px auto; display: block;', src='img/logo-full.png')
+  img(style='width: 100%; margin: 0 auto 40px; display: block;', src='img/logo-full.png')
 
   if !user
     a.btn.btn-block.btn-facebook.btn-social(href='/auth/facebook')
@@ -14,7 +14,8 @@ block content
         span.input-group-btn
             button.btn.btn-default(type='button') Go!
           input.form-control(type='text', name='bib', value='Input your BIB number')
-  img(src='img/menfirstplace.jpg')
+  
+  img(src='img/menfirstplace.jpg', style='margin: 40px 0 0; width: 100%;')
   
   h1 Rush Lelisa Desisa!
 
