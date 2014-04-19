@@ -1,0 +1,30 @@
+{
+  "name": "BostonRush",
+  "version": "0.0.0",
+  "homepage": "https://github.com/jwalsh/hackbostonstrong2014-bostonrush",
+  "authors": [
+    "Gan Shin <gshin@booster.com>",
+    "Timothy Su <tsu@booster.com>",
+    "Jason Walsh <jwalsh@booster.com>"
+  ],
+  "main": "app.js",
+  "moduleType": [
+    "globals"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "underscore": "~1.6.0"
+  },
+  "devDependencies": {
+    "bootstrap": "~3.1.1"
+  }
+}
