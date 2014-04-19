@@ -9,6 +9,7 @@
  * at the bottom of the compiled file.
  */
 
-//= require lib/jquery-2.1.0.min
-//= require lib/bootstrap.min
+//= require bower_components/jquery/dist/jquery.min
+//= require bower_components/underscore/underscore
+//= require pbower_components/bootstrap/dist/js/bootstrap.min
 //= require main

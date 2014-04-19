@@ -21,6 +21,6 @@ node_modules
 Thumbs.db
 
 public/css/styles.css
-public/bower_components
+public/js/bower_components
 
 builtAssets
