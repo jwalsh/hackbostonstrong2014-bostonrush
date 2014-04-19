@@ -6,55 +6,11 @@
 <script src="http://localhost:3000/assets/main-a8180d3cda364d2cf53c300ead296808.js"></script>
 <script src="http://localhost:3000/assets/application-1fe03743e03efae49b9010cee7fc9bcd.js"></script></head>
 
-<style>
 
-/* Shin's */
-body{
-	padding-top:0;}
-.timer {
-	background-image:url(../public/img/rush-map.png);
+<body class=" timer" style="background-image:url(../public/img/rush-map.png);
 	background-repeat:no-repeat;
 	background-size: 1000px auto;
-	background-position: -121px -383px;
-	 }
-	
-.timeone{
-	float:left;
-	width:40%;}
-.timetwo{float: right;
-	width:60%;
-	border-left: 0px;}
-.timeleft{clear: both;}
-.number {
-font-size: 32px;
-color: #474747;
-}
-h1 { font-size:14px;
-color:#C3C3C3;
-margin-top: 0px;
-margin-bottom: -1px;
-	}
-	p {
-margin: 0px;
-}
-.mile {
-	color:#DF4D00;}
-	
-	.list-group {
-margin-bottom: 0;
-
-}
-
-.btn {
-font-weight: 300;
-transition: all 0.15s;
-margin: 11px 10px 10px 0;
-width: 44%;
-margin-left: 10px;
-}
-
-</style>
-<body class=" timer">
+	background-position: -121px -383px;padding-top:0;">
 <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container-fluid"> <a href="#" class="btn">Back</a> </div>
 </nav>
@@ -63,19 +19,38 @@ margin-left: 10px;
 </div>
 <nav class="navbar navbar-default navbar-fixed-bottom">
   <div >
-    <ul class="list-group">
-      <li class="list-group-item timeone">
-      <h1>2013 Winner</h1>
-      <div class="number">3:45:21</div>
+    <ul class="list-group" style="margin-bottom: 0;">
+      <li class="list-group-item timeone" style="float:left;
+	width:40%;">
+      <h1 style="font-size:14px;
+color:#C3C3C3;
+margin-top: 0px;
+margin-bottom: -1px;">2013 Winner</h1>
+      <div class="number"  style="font-size: 32px;
+color: #474747;">3:45:21</div>
       </li>
-      <li class="list-group-item timetwo"><h1>Your Time</h1>
-      <div class="number"><blink>1:25:03</blink></div></li>
-      <li class="list-group-item timeleft">You have <span class="mile">2.3 miles</span> more to go
+      <li class="list-group-item timetwo" style="float: right;
+	width:60%;
+	border-left: 0px;"><h1 style="font-size:14px;
+color:#C3C3C3;
+margin-top: 0px;
+margin-bottom: -1px;">Your Time</h1>
+      <div class="number" style="font-size: 32px;
+color: #474747;"><blink>1:25:03</blink></div></li>
+      <li class="list-group-item timeleft" style="clear: both;">You have <span class="mile" style="color:#DF4D00;">2.3 miles</span> more to go
       </li>
       <li>
-      <p>
-  <button type="button" class="btn btn-primary btn-lg">Stop</button>
- <button type="button" class="btn btn-danger btn-lg">Pause</button>
+      <p style="margin: 0px;">
+  <button type="button" class="btn btn-primary btn-lg" style="font-weight:300;
+transition: all 0.15s;
+margin: 11px 10px 10px 0;
+width: 44%;
+margin-left: 10px;">Stop</button>
+ <button type="button" class="btn btn-danger btn-lg" style="font-weight:300;
+transition: all 0.15s;
+margin: 11px 10px 10px 0;
+width: 44%;
+margin-left: 10px;">Pause</button>
 </p></li>
     </ul>
   </div>
