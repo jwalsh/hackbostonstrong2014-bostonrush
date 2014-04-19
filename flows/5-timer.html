@@ -1,0 +1,84 @@
+
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, user-scalable=no"><meta name="description" content=""><meta name="csrf-token" content="QpwX6vaYst/G9AnSWaP4HWWRggwewjzSTIOz4="><meta name="author" content=""><title>Home | BostonRush</title><link rel="stylesheet" href="http://localhost:3000/assets/styles-6f6fd92847a614630a5e4108e34b5af8.css" /><script src="http://localhost:3000/assets/bower_components/jquery/dist/jquery.min-567a2c0259bf45d5ce49146dffe20a75.js"></script>
+<script src="http://localhost:3000/assets/bower_components/underscore/underscore-54cca00520171a99289b6eef020d05e4.js"></script>
+<script src="http://localhost:3000/assets/bower_components/bootstrap/dist/js/bootstrap.min-48a88cc64c9f7343d4b56a681d0b3944.js"></script>
+<script src="http://localhost:3000/assets/bower_components/mustache/mustache-14d125eb600b54ea81cdfc7e0c4b36dc.js"></script>
+<script src="http://localhost:3000/assets/main-a8180d3cda364d2cf53c300ead296808.js"></script>
+<script src="http://localhost:3000/assets/application-1fe03743e03efae49b9010cee7fc9bcd.js"></script></head>
+
+<style>
+
+/* Shin's */
+body{
+	padding-top:0;}
+.timer {
+	background-image:url(../public/img/rush-map.png);
+	background-repeat:no-repeat;
+	background-size: 1000px auto;
+	background-position: -121px -383px;
+	 }
+	
+.timeone{
+	float:left;
+	width:40%;}
+.timetwo{float: right;
+	width:60%;
+	border-left: 0px;}
+.timeleft{clear: both;}
+.number {
+font-size: 32px;
+color: #474747;
+}
+h1 { font-size:14px;
+color:#C3C3C3;
+margin-top: 0px;
+margin-bottom: -1px;
+	}
+	p {
+margin: 0px;
+}
+.mile {
+	color:#DF4D00;}
+	
+	.list-group {
+margin-bottom: 0;
+
+}
+
+.btn {
+font-weight: 300;
+transition: all 0.15s;
+margin: 11px 10px 10px 0;
+width: 44%;
+margin-left: 10px;
+}
+
+</style>
+<body class=" timer">
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container-fluid"> <a href="#" class="btn">Back</a> </div>
+</nav>
+<div class="container-fluid">
+  <div class="panel panel-default"> </div>
+</div>
+<nav class="navbar navbar-default navbar-fixed-bottom">
+  <div >
+    <ul class="list-group">
+      <li class="list-group-item timeone">
+      <h1>2013 Winner</h1>
+      <div class="number">3:45:21</div>
+      </li>
+      <li class="list-group-item timetwo"><h1>Your Time</h1>
+      <div class="number">1:25:03</div></li>
+      <li class="list-group-item timeleft">You have <span class="mile">2.3 miles</span> more to go
+      </li>
+      <li>
+      <p>
+  <button type="button" class="btn btn-primary btn-lg">Stop</button>
+ <button type="button" class="btn btn-danger btn-lg">Pause</button>
+</p></li>
+    </ul>
+  </div>
+</nav>
+</body>
+</html>
