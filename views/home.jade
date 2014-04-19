@@ -2,10 +2,10 @@ extends layout
 
 block content
   img(style='width: 100%; margin: 50px auto; display: block;', src='img/logo-full.png')
-  a.btn.btn-primary.btn-lg.active(href='#', style='display: block; margin: 0 auto 10px;', role='button')
-    span.glyphicon.glyphicon-user
-    | Sign up with Facebook
-  a(href='#', style='text-align: center; display: block;') Skip for now
+
+  a.btn.btn-block.btn-facebook.btn-social(href='/auth/facebook')
+    i.fa.fa-facebook
+    | Sign in with Facebook
 
 
   p.lead
