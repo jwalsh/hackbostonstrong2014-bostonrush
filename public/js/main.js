@@ -12,7 +12,7 @@ $(document).ready(function() {
                     return parseInt(runner.overallPlace, 10) < 2;
                 })[0];
             $.get('templates/runner.mst', function(template) {
-                $('.lead').html(Mustache.render(template, model.top));
+                // $('.lead').html(Mustache.render(template, model.top));
             });
 
             console.log(model.top);
