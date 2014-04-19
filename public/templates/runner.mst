@@ -1,0 +1,12 @@
+<p>
+  {{name}}, {{age}} ({{bib}})
+  <br/><i>{{city}}, {{state}}</i>
+
+  <ul>
+    <li>Overall: {{overallPlace}}</li>
+    <li>Gender: {{genderPlace}}</li>
+    <li>Division: {{divisionPlace}}</li>
+  </ul>
+
+  <br/><b>Rush to beat {{officialTime}}</b>
+</p>

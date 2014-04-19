@@ -10,10 +10,11 @@ $(document).ready(function() {
                 data,
                 function(runner) {
                     return parseInt(runner.overallPlace, 10) < 2;
-                });
-            var $markup = $('<tt>');
-            $markup.html(JSON.stringify(model.top));
-            $('.lead').html($markup);
+                })[0];
+            $.get('templates/runner.mst', function(template) {
+                $('.lead').html(Mustache.render(template, model.top));
+            });
+
             console.log(model.top);
         });
 

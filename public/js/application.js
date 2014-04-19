@@ -12,4 +12,5 @@
 //= require bower_components/jquery/dist/jquery.min
 //= require bower_components/underscore/underscore
 //= require bower_components/bootstrap/dist/js/bootstrap.min
+//= require bower_components/mustache/mustache
 //= require main
