@@ -27,6 +27,11 @@ var connectAssets = require('connect-assets');
  */
 
 var rushController = require('./controllers/rush');
+var timerController = require('./controllers/timer');
+var resultsController = require('./controllers/results');
+var friendsController = require('./controllers/friends');
+
+
 var homeController = require('./controllers/home');
 var userController = require('./controllers/user');
 var apiController = require('./controllers/api');
@@ -116,7 +121,12 @@ app.use(function(req, res, next) {
  */
 
 app.get('/', homeController.index);
+
 app.get('/rush', rushController.rush);
+app.get('/timer', timerController.timer);
+app.get('/results', resultsController.results);
+app.get('/friends', friendsController.friends);
+
 app.get('/login', userController.getLogin);
 app.post('/login', userController.postLogin);
 app.get('/logout', userController.logout);
