@@ -8,15 +8,15 @@ block content
       i.fa.fa-facebook
       | Sign in with Facebook
   else
-    p Enter your bib number to complete with Tom Davis from
-    form(action='home')
+    p Enter your bib number or the bib number of a friend in the 2013 Boston Marathon or rush against <span id='topRunner'>Lelisa Desisa</span>.
+    form(method='get', action='/rush')
     .input-group
         span.input-group-btn
-            button.btn.btn-default(type='button') Go!
-          input.form-control(type='text', name='bib', value='Input your BIB number')
-  
+            button.btn.btn-default(type='submit',onclick='window.location="/rush"') Go!
+          input.form-control(type='text', name='bib', value='2')
+
   img(src='img/menfirstplace.jpg', style='margin: 40px 0 0; width: 100%;')
-  
+
   h1 Rush Lelisa Desisa!
 
   p You'll be competing against the winner of the 2013 marathon. Let's see how you compare.

@@ -1,21 +1,22 @@
 $(document).ready(function() {
 
-    window.model = {};
+    window.model = { runners: {}};
 
     $.get(
         '/data/marathon_2013.json',
 
         function(data, code) {
-            model.top = _.select(
+            model.runners.all = data;
+            model.runners.top = _.select(
                 data,
                 function(runner) {
-                    return parseInt(runner.overallPlace, 10) < 2;
+                    return runner.name === 'Desisa, Lelisa';
                 })[0];
+            model.runners.top.firstName = model.runners.top.name.split(',')[1];
+            model.runners.top.lastName = model.runners.top.name.split(',')[0];
             $.get('templates/runner.mst', function(template) {
-                // $('.lead').html(Mustache.render(template, model.top));
+                $('#topRunner').html(Mustache.render(template, model.runners.top));
             });
-
-            console.log(model.top);
+            console.log(model);
         });
-
 });
